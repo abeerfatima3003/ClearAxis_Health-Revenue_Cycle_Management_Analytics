@@ -1,4 +1,9 @@
 # ClearAxis Health (RCM) Revenue Cycle Management Analytics
+<p align="center">
+  <img src="clearaxis_health_logo.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="900">
+</p>
+
+---
 ## Table of Contents
 
 | |
