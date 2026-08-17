@@ -28,5 +28,12 @@
 | &nbsp;&nbsp;&nbsp;&nbsp;Write-Off Distribution by Amount |
 | **[5. Recommendations](#5-recommendations)** |
 | **[6. Technical Details](#6-technical-details)** |
+
+
+
+
+
+
+
 | **[7. Clarifying Questions, Assumptions & Caveats](#7-clarifying-questions-assumptions--caveats)** |
 | **[8. Appendix](#8-appendix)** |
