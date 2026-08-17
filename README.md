@@ -3,7 +3,7 @@
 
 | |
 |---|
-| **[1. Background & Overview](#1-background--overview)** |
+| **[Background & Overview](#background--overview)** |
 | &nbsp;&nbsp;Company Context |
 | &nbsp;&nbsp;Project Goals |
 | &nbsp;&nbsp;Insights & Recommendations |
@@ -30,6 +30,7 @@
 | **[6. Technical Details](#6-technical-details)** |
 | **[7. Clarifying Questions, Assumptions & Caveats](#7-clarifying-questions-assumptions--caveats)** |
 | **[8. Appendix](#8-appendix)** |
+
 
 
 
