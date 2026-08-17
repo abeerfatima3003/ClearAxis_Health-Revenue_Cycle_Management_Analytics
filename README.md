@@ -36,9 +36,3 @@
 | **[Clarifying Questions, Assumptions & Caveats](#clarifying-questions-assumptions--caveats)** |
 | **[Appendix](#appendix)** |
 
-
-
-
-
-| **[7. Clarifying Questions, Assumptions & Caveats](#7-clarifying-questions-assumptions--caveats)** |
-| **[8. Appendix](#8-appendix)** |
