@@ -137,7 +137,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Net Collection Rate
 
-**Visualization:** `net_collection_rate` — bullet chart with 95% industry benchmark
+<p align="center">
+  <img src="net_collection_rate.png" alt="Net Collection Rate" width="900">
+</p>
 
 - ClearAxis collected **$407.4M of $465.8M** in net collectible revenue, producing a **Net Collection Rate of 87.45%**.
 
@@ -217,7 +219,7 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 - The five write-off categories contribute relatively similar amounts, with **Timely Filing highest at $893K (21%)**.
 
-- **Timely Filing is the clearest directly preventable category**, representing claims submitted after payer deadlines.
+- **Timely Filing is the clearest, directly preventable category**, representing claims submitted after payer deadlines.
 
 - Timely Filing write-offs declined from **$302K in 2022 to $272K in 2024**, a 9.9% reduction.
 
@@ -237,6 +239,18 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ---
 
+<h2 align="center">Recommendations</h2>
+
+| Priority | Action | Team | Success Metric |
+|---|---|---|---|
+| **P0** | **Implement 30-day submission monitoring** to flag claims approaching payer timely filing deadlines. | Billing Operations | Timely filing write-off amount |
+| **P0** | **Launch a systematic appeal program** for eligible denied claims, prioritizing provider-driven denial codes. | Revenue Cycle · Appeals | Appeal filing rate · Overturn rate |
+| **P0** | Run a **dual-track denial reduction initiative** addressing internal billing errors and payer-side disputes. | Coding · Billing · Payer Contracting | Net Collection Rate · Denial rate by accountability |
+| **P1** | Establish a **dedicated workflow for $100–$1,000 balances** before write-off decisions are made. | AR Management | Medium write-off amount · Recovery rate |
+| **P1** | **Automate handling of balances below $100** to reduce low-value collection effort. | AR Management · Finance | Staff hours per dollar recovered |
+| **P2** | **Investigate the $858K classified as “Unknown”** and strengthen write-off reason documentation. | Revenue Cycle · Compliance | Unknown write-off % of total |
+
+---
 <h2 align="center">Technical Details</h2>
 > **Explore the project:** [View SQL Analysis & Tableau Visualizations](#)
 
@@ -262,9 +276,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 - **Date inconsistencies:** Service, submission, and payment dates contained multiple formats and incorrect year entries. Clean DATE fields were created and invalid records flagged during transformation.
 
-- **Duplicate claim IDs:** Approximately 2% of claim IDs contained formatting variants such as lowercase or hyphenated values. IDs were standardized and duplicate records excluded from analysis.
+- **Duplicate claim IDs:** Approximately 2% of claim IDs contained formatting variants such as lowercase or hyphenated values. IDs were standardized, and duplicate records were excluded from analysis.
 
-- **Appeal date anomalies:** 49,072 denial records contained inconsistent date sequences. The analysis retains valid denial-to-appeal sequences to avoid systematically excluding successful appeals.
+- **Appeal date anomalies:** 49,072 denial records contained inconsistent date sequences. The analysis retains valid denial-to-appeal sequences to avoid the systematic exclusion of successful appeals.
 
 - **Missing and inconsistent fields:** Missing place-of-service names, inconsistent gender values, and NULL denial codes were standardized using deterministic transformation rules.
 
