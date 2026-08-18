@@ -102,7 +102,7 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ### Entity Relationship Diagram
 
 <p align="center">
-  <img src="clearaxis_ERD.png" alt="ClearAxis Health Entity Relationship Diagram" width="600">
+  <img src="images/clearaxis_ERD.png" alt="ClearAxis Health Entity Relationship Diagram" width="600">
 </p>
 
 ### Table Descriptions
@@ -138,7 +138,7 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ### Net Collection Rate
 
 <p align="center">
-  <img src="net_collection_rate.png" alt="Net Collection Rate" width="900">
+  <img src="images/net_collection_rate.png" alt="Net Collection Rate" width="900">
 </p>
 
 - ClearAxis collected **$407.4M of $465.8M** in net collectible revenue, producing a **Net Collection Rate of 87.45%**.
