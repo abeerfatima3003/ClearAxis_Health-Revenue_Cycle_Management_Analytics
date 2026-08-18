@@ -3,7 +3,6 @@
   <img src="images/clearaxis_logo.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="450">
 </p>
 
----
 ## Table of Contents
 
 | |
