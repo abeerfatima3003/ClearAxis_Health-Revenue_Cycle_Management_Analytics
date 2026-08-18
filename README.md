@@ -146,3 +146,137 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 - At the 95% benchmark, the same revenue base would generate approximately **$35.2M more in annual collections**.
 
 - This performance gap prompted a deeper investigation into **denial exposure and permanent write-offs**.
+
+### Revenue Disposition Overview
+
+**Visualization:** `revenue_summary` — diverging bar chart
+
+- **$407M** of net collectible revenue was collected, representing the **87.45% Net Collection Rate**.
+
+- **$298M** in denied or appealed claims remains at risk, measured at charge amount.
+
+- **$142M** remains in pending or void status and has not yet been classified as permanently lost.
+
+- **$4.26M** was permanently written off. These figures use different revenue bases and **should not be summed as additive components**.
+
+## Payer & Denial Performance
+
+### Denied Revenue by Payer Type
+
+**Visualization:** `denied_revenue_by_payer_type` — horizontal bar chart with denial rate labels
+
+- Medicaid has the highest denied revenue at **$53M**, followed by Tricare ($48M) and Medicare ($43M).
+
+- Denial rates are nearly identical across all seven payer types, ranging from **24% to 25%**.
+
+- Average denied claim values are also consistent at approximately **$2,422–$2,512**.
+
+- The variation in denied revenue is therefore driven primarily by **claim volume, not payer denial behavior**, indicating a systemic operational issue.
+
+### Denial Accountability Analysis
+
+**Visualization:** `provider_vs_payer_split` — vertical bar chart with percentage labels
+
+- **Provider-driven:** $93.6M (**42%**)  
+- **Payer-driven:** $93.3M (**42%**)  
+- **Shared:** $31.5M (**16%**)
+
+- The near-even split shows that the denial problem cannot be addressed through a single intervention.
+
+- Internal billing and coding improvements must be paired with **payer-side contract, eligibility, and coordination-of-benefits interventions**.
+
+### Appeal Effectiveness & Revenue Recovery
+
+**Visualization:** `overturned_revenue` — horizontal bar chart with recovered revenue labels
+
+- Appeal overturn rates range from **34.26% to 36.99%** across payer types, indicating consistent appeal effectiveness.
+
+- Successful appeals have recovered approximately **$20.6M** across the three-year period.
+
+- Medicaid generated the highest recovery at **$3.84M**, consistent with its higher claim volume.
+
+- The largest opportunity is increasing the **appeal filing rate among eligible denied claims**, rather than targeting a specific payer.
+
+## Write-Off Analysis & Revenue Impact
+
+### Write-Off Trends by Payer Type
+
+**Visualizations:** `writeoffs_payer_type_by_year` — faceted bar chart · `top_writeoffs_by_month` — line chart
+
+- Total write-offs were **$4.26M**, with payer-level totals relatively evenly distributed.
+
+- Write-offs changed by only **-0.28% from 2022 to 2024**, indicating no meaningful improvement or deterioration over the analysis period.
+
+- Write-off rates range from **0.56% to 0.62% across provider group sizes**, showing little evidence that practice size is a major driver.
+
+- Monthly patterns are inconsistent across payers and years, providing **no evidence of a persistent seasonal driver**.
+
+### Write-Off Drivers by Reason
+
+**Visualizations:** `writeoffs_reason` — horizontal bar chart · `timely_filing_heatmap` — month × year heatmap
+
+- The five write-off categories contribute relatively similar amounts, with **Timely Filing highest at $893K (21%)**.
+
+- **Timely Filing is the clearest directly preventable category**, representing claims submitted after payer deadlines.
+
+- Timely Filing write-offs declined from **$302K in 2022 to $272K in 2024**, a 9.9% reduction.
+
+- No month shows consistently elevated timely filing losses across all three years, indicating a **chronic process issue rather than a seasonal problem**.
+
+### Write-Off Distribution by Amount
+
+**Visualization:** `writeoffs_distribution` — lollipop chart
+
+- Small write-offs (<$100) account for **27,329 transactions but only $516K**, averaging approximately $19 each.
+
+- Medium write-offs ($100–$1,000) generate the greatest dollar impact at **$2.37M across 7,771 transactions**.
+
+- Large write-offs (>$1,000) are less frequent but represent **$1.51M across 838 transactions**, averaging $1,801 each.
+
+- **Medium balances represent the strongest collection opportunity**, while small balances may be better suited to automated write-off policies.
+
+---
+
+<h2 align="center">Technical Details</h2>
+> **Explore the project:** [View SQL Analysis & Tableau Visualizations](#)
+
+### Tools & Technologies
+
+- **Database:** Microsoft SQL Server 2022 Express — data loading, cleaning, transformation, and analysis
+- **Visualization:** Tableau Public — analytical dashboards and visualizations
+- **Version Control:** GitHub — SQL scripts, documentation, and project files
+
+### Project Files
+
+| Resource | Link |
+|---|---|
+| SQL Cleaning Scripts | *Add GitHub link* |
+| SQL Analysis Queries | *Add GitHub link* |
+| Tableau Public Dashboard | *Add Tableau Public link* |
+| Dataset Guide | *Add file link* |
+
+---
+<h2 align="center">Clarifying Questions, Assumptions & Caveats</h2>
+
+### Data Quality & Methodology
+
+- **Date inconsistencies:** Service, submission, and payment dates contained multiple formats and incorrect year entries. Clean DATE fields were created and invalid records flagged during transformation.
+
+- **Duplicate claim IDs:** Approximately 2% of claim IDs contained formatting variants such as lowercase or hyphenated values. IDs were standardized and duplicate records excluded from analysis.
+
+- **Appeal date anomalies:** 49,072 denial records contained inconsistent date sequences. The analysis retains valid denial-to-appeal sequences to avoid systematically excluding successful appeals.
+
+- **Missing and inconsistent fields:** Missing place-of-service names, inconsistent gender values, and NULL denial codes were standardized using deterministic transformation rules.
+
+### Assumptions & Stakeholder Questions
+
+- **Net collectible revenue:** Defined as charge amount less contractual adjustments from `fact_payments`, representing revenue considered realistically collectible.
+
+- **Denied revenue at risk:** Includes both Denied and Appealed claims measured at `charge_amount`, since `allowed_amount` may be unavailable for claims that were never adjudicated.
+
+- **Write-off classification:** The $858K “Unknown” category requires stakeholder clarification to determine whether the issue reflects missing documentation, inconsistent workflows, or a data capture gap.
+
+- **Operational validation:** Stakeholders should confirm whether the decline in timely filing write-offs reflects a specific operational initiative and whether post-churn claims represent legitimate late submissions or a data pipeline issue.
+
+
+
