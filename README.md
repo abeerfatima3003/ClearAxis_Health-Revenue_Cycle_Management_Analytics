@@ -86,32 +86,63 @@ Insights and recommendations are provided across four key areas of the revenue c
 
 ### North Star Metrics
 
-| Business Question | North Star Metric | Key Finding |
-|---|---|---|
-| **Main: Is ClearAxis collecting efficiently?** | **Net Collection Rate** | **87.45%** vs. 95% benchmark |
-| **Q: Which payers are the biggest problem?** | **Denied Revenue at Risk** | **$298M** across 120,735 claims |
-| **Q: What revenue are we giving up?** | **Total Write-Off Amount** | **$4.26M** permanently written off |
+**Is ClearAxis collecting efficiently?**  
+**Net Collection Rate:** 87.45% vs. 95% benchmark
+
+**Which payers are the biggest problem?**  
+**Denied Revenue at Risk:** $298M across 120,735 claims
+
+**What revenue are we giving up?**  
+**Total Write-Off Amount:** $4.26M permanently written off
 
 ### Dataset Overview
 
-The dataset is a 36-month RCM dataset covering **January 2022 through December 2024**. It contains **six relational tables structured as a star schema**, supporting analysis across claims, payments, denials, providers, payers, and patients.
+The dataset covers **36 months (January 2022–December 2024)** and contains **6 relational tables structured as a star schema**, supporting analysis across claims, payments, denials, providers, payers, and patients.
 
-#### Entity Relationship Diagram
+### Entity Relationship Diagram
 
 <p align="center">
-  <img src="clearaxis_erd.png" alt="ClearAxis Health Entity Relationship Diagram" width="1000">
+  <img src="clearaxis_ERD.png" alt="ClearAxis Health Entity Relationship Diagram" width="600">
 </p>
 
 ### Table Descriptions
 
-**`fact_claims` - (500,000 rows)** Core transactional table containing one row per insurance claim submitted. Contains claim status, charge amount, denial codes, clean claim flag, and Days in AR. This is the central fact table from which denial rates, collection efficiency, and billing quality are derived.
+**`fact_claims` - 500,000 rows** Core claim-level transaction table containing charges, status, denial codes, clean claim flags, and Days in AR.
 
-**`fact_payments` - (300,000 rows)** One row per payment event linked to a claim. Contains payment amounts, write-off amounts, write-off reasons, contractual adjustments, and posting dates. Serves as the source of truth for revenue actually collected and revenue permanently lost.
+**`fact_payments` - 300,000 rows** Payment-level transaction table containing collections, write-offs, contractual adjustments, and payment dates.
 
-**`fact_denials` - (124,685) rows** One row per denial event. Contains denial codes, categories, appeal outcomes, and revenue recovered through appeals. Used for appeal overturn analysis and denial root-cause investigation.
+**`fact_denials` - 124,685 rows** Denial-level table containing denial codes, categories, appeal outcomes, and recovered revenue.
 
-**`dim_providers` - (2,000 rows)** Provider master containing specialty, group size, EHR system, state, onboarding and churn dates, and contract rate. Enables segmentation of claim quality by provider characteristics.
+**`dim_providers` - 2,000 rows** Provider master containing specialty, EHR system, state, group size, and contract information.
 
-**`dim_payers` - (150 rows)** Payer master containing payer type, contract type, average reimbursement rate, and clearinghouse. Enables segmentation of denial and collection behavior by insurer.
+**`dim_payers` - 150 rows** Payer master containing payer type, contract type, reimbursement rate, and clearinghouse information.
 
-**`dim_patients` - (50,000 rows)** Patient demographic table containing insurance type, state, and secondary coverage flag. Enables patient-level revenue analysis.
+**`dim_patients` - 50,000 rows** Patient dimension containing insurance type, state, and secondary coverage information.
+
+---
+<h2 align="center">Executive Summary</h2>
+
+- **Collection performance:** Net Collection Rate was **87.45%**, 7.55 percentage points below the 95% benchmark, representing approximately **$58.4M in unrealized collectible revenue**.
+
+- **Denial exposure:** **$298M across 120,735 denied or appealed claims** remains at risk. Denial rates are consistent across all seven payer types, indicating a **systemic operational issue rather than a single problem payer**.
+
+- **Revenue recovery:** Denial accountability is split between **provider-driven (42%)**, **payer-driven (42%)**, and **shared (16%)** causes. Appeals currently recover approximately **$20.6M**, with overturn rates of 34–37%.
+
+- **Permanent revenue loss:** **$4.26M was written off**, with no meaningful variation by payer, year, or provider group size. **Medium-sized write-offs ($100–$1,000) account for the largest dollar impact at $2.37M.**
+
+---
+<h2 align="center">Insights Deep Dive</h2>
+
+## Executive Performance
+
+### Net Collection Rate
+
+**Visualization:** `net_collection_rate` — bullet chart with 95% industry benchmark
+
+- ClearAxis collected **$407.4M of $465.8M** in net collectible revenue, producing a **Net Collection Rate of 87.45%**.
+
+- The rate is **7.55% below the 95% benchmark**, representing approximately **$58.4M in unrealized collectible revenue**.
+
+- At the 95% benchmark, the same revenue base would generate approximately **$35.2M more in annual collections**.
+
+- This performance gap prompted a deeper investigation into **denial exposure and permanent write-offs**.
