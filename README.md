@@ -33,7 +33,6 @@
 | **[Recommendations](#recommendations)** |
 | **[Technical Details](#technical-details)** |
 | **[Clarifying Questions, Assumptions & Caveats](#clarifying-questions-assumptions--caveats)** |
-| **[Appendix](#appendix)** |
 
 ---
 <h2 align="center">Background & Overview</h2>
