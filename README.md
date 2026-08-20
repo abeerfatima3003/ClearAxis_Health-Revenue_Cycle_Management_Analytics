@@ -1,4 +1,4 @@
-# ClearAxis Health (RCM) Revenue Cycle Management Analytics
+# ClearAxis Health (RCM) Revenue Cycle Management Analytics 
 <p align="center">
   <img src="images/clearaxis_logo.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="450">
 </p>
@@ -135,7 +135,7 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ### Net Collection Rate
 
 <p align="center">
-  <img src="images/net_collection_rate.png" alt="Net Collection Rate" width="900">
+  <img src="images/net_collection_rate_viz.png" alt="Net Collection Rate" width="650">
 </p>
 
 - ClearAxis collected **$407.4M of $465.8M** in net collectible revenue, producing a **Net Collection Rate of 87.45%**.
@@ -148,7 +148,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Revenue Disposition Overview
 
-**Visualization:** `revenue_summary` — diverging bar chart
+<p align="center">
+  <img src="images/revenue_summary_viz.png" alt="Revenue Summary" width="450">
+</p>
 
 - **$407M** of net collectible revenue was collected, representing the **87.45% Net Collection Rate**.
 
@@ -162,7 +164,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Denied Revenue by Payer Type
 
-**Visualization:** `denied_revenue_by_payer_type` — horizontal bar chart with denial rate labels
+<p align="center">
+  <img src="images/denied_revenue_by_payer_type_viz.png" alt="denied_revenue_by_payer_type" width="650">
+</p>
 
 - Medicaid has the highest denied revenue at **$53M**, followed by Tricare ($48M) and Medicare ($43M).
 
@@ -174,7 +178,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Denial Accountability Analysis
 
-**Visualization:** `provider_vs_payer_split` — vertical bar chart with percentage labels
+<p align="center">
+  <img src="images/provider_vs_payer_viz.png" alt="provider_vs_payer_split" width="350">
+</p>
 
 - **Provider-driven:** $93.6M (**42%**)  
 - **Payer-driven:** $93.3M (**42%**)  
