@@ -47,7 +47,7 @@ As the data analyst embedded with the ClearAxis Finance and Revenue Cycle Operat
 
 > **Is ClearAxis Health collecting revenue as efficiently as it should be, and where are the primary sources of revenue loss, delay, and collection risk?**
 
-To answer this, the analysis pursues four specific objectives:
+To answer this, the analysis pursues 4 specific objectives:
 
 1. **Evaluate collection performance** against the 95% target benchmark for Net Collection Rate.
 2. **Identify the primary drivers** of the collection gap, denial patterns, and write-off behavior.
