@@ -110,9 +110,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 **`fact_denials` - 124,685 rows** Denial-level table containing denial codes, categories, appeal outcomes, and recovered revenue.
 
-**`dim_providers` - 2,000 rows** Provider master containing specialty, EHR system, state, group size, and contract information.
+**`dim_providers` - 2,000 rows** Provider dimension containing specialty, EHR system, state, group size, and contract information.
 
-**`dim_payers` - 150 rows** Payer master containing payer type, contract type, reimbursement rate, and clearinghouse information.
+**`dim_payers` - 150 rows** Payer dimension containing payer type, contract type, reimbursement rate, and clearinghouse information.
 
 **`dim_patients` - 50,000 rows** Patient dimension containing insurance type, state, and secondary coverage information.
 
