@@ -45,7 +45,7 @@ ClearAxis Health is a Revenue Cycle Management (RCM) SaaS platform serving healt
 
 As the data analyst embedded with the ClearAxis Finance and Revenue Cycle Operations teams, this analysis was commissioned to answer a single overarching business question:
 
-> **Is ClearAxis Health collecting revenue as efficiently as it should be — and where are the primary sources of revenue loss, delay, and collection risk?**
+> **Is ClearAxis Health collecting revenue as efficiently as it should be, and where are the primary sources of revenue loss, delay, and collection risk?**
 
 To answer this, the analysis pursues four specific objectives:
 
