@@ -74,7 +74,6 @@ Insights and recommendations are provided across four key areas of the revenue c
 | Insight Area | Primary Stakeholder(s) | Decision Enabled |
 |---|---|---|
 | **Net Collection Rate** | CFO · Finance Director | Assess whether revenue is being collected efficiently enough to support financial performance. |
-| **Denied Revenue by Payer** | Revenue Cycle Director · Payer Contracting | Identify payer segments that contribute the greatest amount of denied revenue and should be prioritized for intervention. |
 | **Denial Accountability** | Revenue Cycle Operations · Coding & Billing | Determine how much denied revenue is attributable to provider-side, payer-side, and shared factors. |
 | **Appeal Effectiveness & Revenue Recovery** | Appeals Team · Revenue Cycle Director | Evaluate whether the appeals process is effectively converting denied claims into recovered revenue. |
 | **Write-Off Analysis** | Finance · AR Manager · Revenue Cycle Operations | Identify where revenue is being permanently lost and which write-off drivers should be prioritized for corrective action. |
