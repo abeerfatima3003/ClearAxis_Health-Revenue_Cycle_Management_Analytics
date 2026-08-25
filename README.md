@@ -193,6 +193,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ### Appeal Effectiveness & Revenue Recovery
 
 **Visualization:** `overturned_revenue` — horizontal bar chart with recovered revenue labels
+<p align="center">
+  <img src="images/overturned_by_appeal_viz.png" alt="Overturned Revenue" width="750">
+</p>
 
 - Appeal overturn rates range from **34.26% to 36.99%** across payer types, indicating consistent appeal effectiveness.
 
