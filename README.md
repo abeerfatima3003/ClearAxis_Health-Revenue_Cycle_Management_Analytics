@@ -192,7 +192,6 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Appeal Effectiveness & Revenue Recovery
 
-**Visualization:** `overturned_revenue` — horizontal bar chart with recovered revenue labels
 <p align="center">
   <img src="images/overturned_by_appeal_viz.png" alt="Overturned Revenue" width="750">
 </p>
@@ -209,7 +208,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Write-Off Trends by Payer Type
 
-**Visualizations:** `writeoffs_payer_type_by_year` — faceted bar chart · `top_writeoffs_by_month` — line chart
+<p align="center">
+  <img src="images/writeoffs_payer_type_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="750">
+</p>
 
 - Total write-offs were **$4.26M**, with payer-level totals relatively evenly distributed.
 
