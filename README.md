@@ -236,7 +236,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Write-Off Distribution by Amount
 
-**Visualization:** `writeoffs_distribution` — lollipop chart
+<p align="center">
+  <img src="images/writeoff_distribution_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="850">
+</p>
 
 - Small write-offs (<$100) account for **27,329 transactions but only $516K**, averaging approximately $19 each.
 
