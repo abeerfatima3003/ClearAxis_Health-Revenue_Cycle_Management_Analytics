@@ -222,7 +222,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Write-Off Drivers by Reason
 
-**Visualizations:** `writeoffs_reason` — horizontal bar chart · `timely_filing_heatmap` — month × year heatmap
+<p align="center">
+  <img src="images/writeoffs_reason_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="750">
+</p>
 
 - The five write-off categories contribute relatively similar amounts, with **Timely Filing highest at $893K (21%)**.
 
