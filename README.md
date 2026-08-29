@@ -56,12 +56,11 @@ To answer this, the analysis pursues four specific objectives:
 
 | Area | Key Metric | Primary Stakeholder |
 |---|---|---|
-| Collection Efficiency | Net Collection Rate: **87.45% vs. 95% benchmark** | CFO · Finance Director |
-| Denial Management | Denied Revenue at Risk: **$298M across 120,735 claims** | Revenue Cycle Operations · Coding & Billing |
-| Denial Accountability | Provider-driven **42%** · Payer-driven **42%** · Shared **16%** | Revenue Cycle Operations · Coding & Billing |
-| Appeal Performance | Appeal Overturn Rate: **34–37%** · **$20.6M recovered** | Appeals Team · Revenue Cycle Director |
-| Write-Off Analysis | Total Write-Offs: **$4.26M** | Finance · AR Manager · Revenue Cycle Operations |
-| Write-Off Optimization | Medium balances: **$2.37M across 7,771 transactions** | AR Management · Finance |
+| Collection Efficiency | **87.45%** vs. **95% benchmark** | CFO, Finance Director |
+| Denial Management | **$298M denied revenue** across **120,735 claims** | Revenue Cycle Operations, Coding & Billing |
+| Appeal Performance | **$20.6M recovered revenue** | Appeals Team, Revenue Cycle Director |
+| Write-Off Analysis | **$4.26M total write-offs** | Finance, AR Manager, Revenue Cycle Operations |
+| Write-Off Optimization | **$2.37M medium balance claims** across **7,771 transactions** | AR Management, Finance |
 ---
 <h2 align="center">Initial Business Questions & Data Structure</h2>
 
