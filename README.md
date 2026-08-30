@@ -66,14 +66,11 @@ To answer this, the analysis pursues four specific objectives:
 
 ### North Star Metrics
 
-**Is ClearAxis collecting efficiently?**  
-**Net Collection Rate:** 87.45% vs. 95% benchmark
+Is the collection efficient?  - **Net Collection Rate**
 
-**Which payers are the biggest problem?**  
-**Denied Revenue at Risk:** $298M across 120,735 claims
+Where is revenue at risk?  - **Denied Revenue at Risk**
 
-**What revenue are we giving up?**  
-**Total Write-Off Amount:** $4.26M permanently written off
+What revenue is permanently lost?  - **Total Write-Off Amount** 
 
 ### Dataset Overview
 
