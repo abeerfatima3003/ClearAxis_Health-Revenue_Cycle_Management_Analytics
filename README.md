@@ -99,13 +99,10 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ---
 <h2 align="center">Executive Summary</h2>
 
-- **Collection performance:** Net Collection Rate was **87.45%**, 7.55 percentage points below the 95% benchmark, representing approximately **$58.4M in unrealized collectible revenue**.
-
-- **Denial exposure:** **$298M across 120,735 denied or appealed claims** remains at risk. Denial rates are consistent across all seven payer types, indicating a **systemic operational issue rather than a single problem payer**.
-
-- **Revenue recovery:** Denial accountability is split between **provider-driven (42%)**, **payer-driven (42%)**, and **shared (16%)** causes. Appeals currently recover approximately **$20.6M**, with overturn rates of 34–37%.
-
-- **Permanent revenue loss:** **$4.26M was written off**, with no meaningful variation by payer, year, or provider group size. **Medium-sized write-offs ($100–$1,000) account for the largest dollar impact at $2.37M.**
+- **ClearAxis Health collected 87.45% of net collectible revenue against a 95% industry benchmark, leaving approximately $58.4M unrealized over the 36-month period.**
+- **The primary driver is $298M in denied and appealed claims across 120,735 claims, a problem distributed uniformly across all seven payer types at identical 24–25% denial rates, pointing to a systemic failure in billing operations rather than any single payer relationship.**
+- **Accountability for this denial exposure is split nearly equally between provider-driven coding and authorization errors (42%, $93.6M) and payer-side determination policies (42%, $93.3M), meaning neither side alone can solve it.**
+- **The appeals process currently recovers $20.6M at a 34–37% overturn rate, which is effective, but likely covers only a fraction of the eligible denied claims. Separately, $4.26M has been permanently written off, concentrated in medium-sized balances ($100–$1,000), where collection follow-up is most worthwhile.**
 
 ---
 <h2 align="center">Insights Deep Dive</h2>
