@@ -234,13 +234,15 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Assumptions & Stakeholder Questions
 
+- **Net collection rate:** The 95% NCR benchmark is the HFMA (Healthcare Financial Management Association) standard for RCM platform performance. This benchmark applies to overall collection efficiency and may differ by payer mix or specialty. Confirm with stakeholders whether a segment-specific benchmark is more appropriate for the providers.
+
 - **Net collectible revenue:** Defined as charge amount less contractual adjustments from `fact_payments`, representing revenue considered realistically collectible.
 
 - **Denied revenue at risk:** Includes both Denied and Appealed claims measured at `charge_amount`, since `allowed_amount` may be unavailable for claims that were never adjudicated.
 
 - **Write-off classification:** The $858K “Unknown” category requires stakeholder clarification to determine whether the issue reflects missing documentation, inconsistent workflows, or a data capture gap.
 
-- **Operational validation:** Stakeholders should confirm whether the decline in timely filing write-offs reflects a specific operational initiative and whether post-churn claims represent legitimate late submissions or a data pipeline issue.
+- **Operational validation:** Providers with a recorded churn date continue to appear in claim activity after that date. Confirmation needed on whether post-churn claims represent legitimate late submissions (common after provider offboarding) or a system data retention issue.
 
 
 
