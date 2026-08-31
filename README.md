@@ -99,10 +99,10 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 ---
 <h2 align="center">Executive Summary</h2>
 
-- **ClearAxis Health collected 87.45% of net collectible revenue against a 95% industry benchmark, leaving approximately $58.4M unrealized over the 36-month period.**
-- **The primary driver is $298M in denied and appealed claims across 120,735 claims, a problem distributed uniformly across all seven payer types at identical 24–25% denial rates, pointing to a systemic failure in billing operations rather than any single payer relationship.**
-- **Accountability for this denial exposure is split nearly equally between provider-driven coding and authorization errors (42%, $93.6M) and payer-side determination policies (42%, $93.3M), meaning neither side alone can solve it.**
-- **The appeals process currently recovers $20.6M at a 34–37% overturn rate, which is effective, but likely covers only a fraction of the eligible denied claims. Separately, $4.26M has been permanently written off, concentrated in medium-sized balances ($100–$1,000), where collection follow-up is most worthwhile.**
+- ClearAxis Health collected **87.45% of net collectible revenue** against a 95% industry benchmark, leaving approximately $58.4M unrealized over the 36-month period.
+- The primary driver is **$298M** in denied and appealed claims **across 120,735 claims**, a problem distributed uniformly across all seven payer types at identical 24–25% denial rates, pointing to a systemic failure in billing operations rather than any single payer relationship.
+- Accountability for this denial exposure is split nearly equally between **provider-driven** coding and authorization errors **(42%, $93.6M)** and **payer-side** determination policies **(42%, $93.3M)**, meaning neither side alone can solve it.
+- The **appeals** process currently recovers **$20.6M at a 34–37%** overturn rate, which is effective, but likely covers only a fraction of the eligible denied claims. Separately, **$4.26M** has been **permanently written off**, concentrated in medium-sized balances ($100–$1,000), where follow-up on collections is most worthwhile.
 
 ---
 <h2 align="center">Insights Deep Dive</h2>
@@ -115,13 +115,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/net_collection_rate_viz.png" alt="Net Collection Rate" width="650">
 </p>
 
-- ClearAxis collected **$407.4M of $465.8M** in net collectible revenue, producing a **Net Collection Rate of 87.45%**.
-
-- The rate is **7.55% below the 95% benchmark**, representing approximately **$58.4M in unrealized collectible revenue**.
-
-- At the 95% benchmark, the same revenue base would generate approximately **$35.2M more in annual collections**.
-
-- This performance gap prompted a deeper investigation into **denial exposure and permanent write-offs**.
+- ClearAxis collected **$407.4M against $465.8M** in net collectible revenue. 
+- An 87.45% Net Collection Rate that sits **7.55 percentage points below** the 95% industry benchmark.
+- Translated to dollars, this gap represents approximately **$58.4M** in revenue that was contractually collectible but never reached the books. This performance shortfall is what prompted the deeper investigation into denial patterns and write-off behavior documented below.
 
 ### Revenue Disposition Overview
 
