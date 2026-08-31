@@ -243,6 +243,8 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ---
 <h2 align="center">Technical Details</h2>
+
+### Project Files
 > **Explore the project:**
 [View SQL Cleaning](https://github.com/abeerfatima3003/ClearAxis_Health-Revenue_Cycle_Management_Analytics/tree/main/data_cleaning), [View SQL Analysis](https://github.com/abeerfatima3003/ClearAxis_Health-Revenue_Cycle_Management_Analytics/tree/main/data_analysis), [View Tableau Visualizations](https://github.com/abeerfatima3003/ClearAxis_Health-Revenue_Cycle_Management_Analytics/tree/main/tableau)
 
@@ -252,7 +254,7 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 - **Visualization:** Tableau Public — analytical dashboards and visualizations
 - **Version Control:** GitHub — SQL scripts, documentation, and project files
 
-### Project Files
+
 
 | Resource | Link |
 |---|---|
