@@ -250,18 +250,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
 
 ### Tools & Technologies
 
-- **Database:** Microsoft SQL Server 2022 Express — data loading, cleaning, transformation, and analysis
-- **Visualization:** Tableau Public — analytical dashboards and visualizations
-- **Version Control:** GitHub — SQL scripts, documentation, and project files
-
-
-
-| Resource | Link |
-|---|---|
-| SQL Cleaning Scripts | *Add GitHub link* |
-| SQL Analysis Queries | *Add GitHub link* |
-| Tableau Public Dashboard | *Add Tableau Public link* |
-| Dataset Guide | *Add file link* |
+- **Database:** Microsoft SQL Server 2022 Express - data loading, cleaning, transformation, and analysis
+- **Visualization:** Tableau Public - analytical dashboards and visualizations
+- **Version Control:** GitHub - SQL scripts, documentation, and project files
 
 ---
 <h2 align="center">Clarifying Questions, Assumptions & Caveats</h2>
