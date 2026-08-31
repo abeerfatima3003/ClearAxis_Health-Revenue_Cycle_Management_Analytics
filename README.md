@@ -125,13 +125,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/revenue_summary_viz.png" alt="Revenue Summary" width="450">
 </p>
 
-- **$407M** of net collectible revenue was collected, representing the **87.45% Net Collection Rate**.
-
-- **$298M** in denied or appealed claims remains at risk, measured at charge amount.
-
-- **$142M** remains in pending or void status and has not yet been classified as permanently lost.
-
-- **$4.26M** was permanently written off. These figures use different revenue bases and **should not be summed as additive components**.
+- The **$298M in denied revenue** and **$142M in pending/void claims** are measured at charge amount, the provider's list price before payer adjustments, while the **$407M collected** and **$4.26M written off** reflect actual transacted values.
+- These figures should not be summed cause they represent different stages of the same revenue lifecycle, not additive components of a single total. 
+- The **denied revenue exposure is the priority** because, unlike write-offs, it is not yet permanently lost.
 
 ## Payer & Denial Performance
 
@@ -141,13 +137,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/denied_revenue_by_payer_type_viz.png" alt="denied_revenue_by_payer_type" width="650">
 </p>
 
-- Medicaid has the highest denied revenue at **$53M**, followed by Tricare ($48M) and Medicare ($43M).
-
-- Denial rates are nearly identical across all seven payer types, ranging from **24% to 25%**.
-
-- Average denied claim values are also consistent at approximately **$2,422–$2,512**.
-
-- The variation in denied revenue is therefore driven primarily by **claim volume, not payer denial behavior**, indicating a systemic operational issue.
+- The average charge per denied claim is nearly identical across all seven payers, ranging from **$2,422 to $2,512**, and all deny at the same rate, **24 to 25%**. 
+- This means Medicaid's $53M in denied revenue is not due to Medicaid being a harder payer to work with. It is because Medicaid has the most claims.
+- The implication is counterintuitive that there is no payer relationship to fix. The same denial rate, hitting a larger claim volume, produces more denied dollars. The **problem lies in the submission process and affects every payer equally**.
 
 ### Denial Accountability Analysis
 
@@ -155,13 +147,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/provider_vs_payer_viz.png" alt="provider_vs_payer_split" width="350">
 </p>
 
-- **Provider-driven:** $93.6M (**42%**)  
-- **Payer-driven:** $93.3M (**42%**)  
-- **Shared:** $31.5M (**16%**)
-
-- The near-even split shows that the denial problem cannot be addressed through a single intervention.
-
-- Internal billing and coding improvements must be paired with **payer-side contract, eligibility, and coordination-of-benefits interventions**.
+- The **42/42/16** split is the most operationally significant finding in this analysis. This indicates that **roughly half of the $298M problem is entirely within ClearAxis's control**, including billing errors, missed prior authorizations, and late submissions made by the billing team before the claim ever reached the payer. 
+- The other half requires working directly with the payer to challenge coverage decisions, fix patient eligibility gaps, and resolve dual-insurance disputes.
+- A team that focuses only on internal billing improvements will address half the problem. A team that focuses only on payer negotiations addresses the other half. Neither approach alone can move the $298M figure. **Both tracks must run simultaneously**.
 
 ### Appeal Effectiveness & Revenue Recovery
 
@@ -169,13 +157,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/overturned_by_appeal_viz.png" alt="Overturned Revenue" width="750">
 </p>
 
-- Appeal overturn rates range from **34.26% to 36.99%** across payer types, indicating consistent appeal effectiveness.
-
-- Successful appeals have recovered approximately **$20.6M** across the three-year period.
-
-- Medicaid generated the highest recovery at **$3.84M**, consistent with its higher claim volume.
-
-- The largest opportunity is increasing the **appeal filing rate among eligible denied claims**, rather than targeting a specific payer.
+- **1/3 denied claims** that reach appeal **are successfully overturned**, and that ratio holds regardless of which payer originally denied the claim.
+- **Workers Comp reverses 37%** of appeals, **Tricare reverses 34.3%**, and every other payer falls within that narrow band. The $20.6M recovered through appeals is meaningful, but it likely represents only a fraction of what is recoverable. 
+- The data does not show how many eligible denied claims were never appealed. Hence, the most valuable action is not optimizing which payer to appeal against; it is **ensuring that every claim that qualifies for appeal actually gets one filed**.
 
 ## Write-Off Analysis & Revenue Impact
 
@@ -185,13 +169,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/writeoffs_payer_type_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="750">
 </p>
 
-- Total write-offs were **$4.26M**, with payer-level totals relatively evenly distributed.
-
-- Write-offs changed by only **-0.28% from 2022 to 2024**, indicating no meaningful improvement or deterioration over the analysis period.
-
-- Write-off rates range from **0.56% to 0.62% across provider group sizes**, showing little evidence that practice size is a major driver.
-
-- Monthly patterns are inconsistent across payers and years, providing **no evidence of a persistent seasonal driver**.
+- **Write-offs total $4.26M** across the three-year window, distributed across all seven payer types with no single payer dominating.
+- At the aggregate level, write-offs are essentially flat, **changing by only -0.28% from 2022 to 2024**. This means that payer-level movements are offsetting each other. Improvements in some payers are being masked by increases in others. Ex. Workers Comp and Tricare write-offs declined meaningfully while Medicaid and Medicare write-offs increased.
+- Provider group size is not a factor. Write-off rates range from **0.56% to 0.62% across Solo through 50+ practices**, confirming this is a billing process problem, not a capacity or resource problem (insufficient staff, time, or equipment to see more patients or handle work efficiently).
 
 ### Write-Off Drivers by Reason
 
@@ -199,13 +179,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/writeoffs_reason_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="750">
 </p>
 
-- The five write-off categories contribute relatively similar amounts, with **Timely Filing highest at $893K (21%)**.
-
-- **Timely Filing is the clearest, directly preventable category**, representing claims submitted after payer deadlines.
-
-- Timely Filing write-offs declined from **$302K in 2022 to $272K in 2024**, a 9.9% reduction.
-
-- No month shows consistently elevated timely filing losses across all three years, indicating a **chronic process issue rather than a seasonal problem**.
+- All five write-off categories fall within a tight band between **$787K and $893K**, close enough that no single reason dominates. **Timely Filing** ranks at the **top at $893K (21%)**, which matters because it is the only category that is entirely preventable.
+- Timely filing write-offs **declined 9.9% from 2022 to 2024** **($302K to $272K)**, showing the problem is improving, but slowly.  
+- The monthly heatmap shows no recurring peak month across any of the three years, confirming that this is not a seasonal surge; it is a chronic submission discipline problem that occurs at roughly the same rate every month.
 
 ### Write-Off Distribution by Amount
 
@@ -213,13 +189,9 @@ The dataset covers **36 months (January 2022–December 2024)** and contains **6
   <img src="images/writeoff_distribution_viz.png" alt="ClearAxis Health — Revenue Cycle Intelligence" width="850">
 </p>
 
-- Small write-offs (<$100) account for **27,329 transactions but only $516K**, averaging approximately $19 each.
-
-- Medium write-offs ($100–$1,000) generate the greatest dollar impact at **$2.37M across 7,771 transactions**.
-
-- Large write-offs (>$1,000) are less frequent but represent **$1.51M across 838 transactions**, averaging $1,801 each.
-
-- **Medium balances represent the strongest collection opportunity**, while small balances may be better suited to automated write-off policies.
+- Small write-offs under **$100 account for 27,329 transactions** but generate only **$516K** in total, an average of $19 each. Chasing these individually costs more in staff time than the balance is worth. 
+- Medium write-offs between **$100 and $1,000** are the priority, **7,771 transactions totaling $2.37M**, averaging $305 each, enough to justify follow-up, manageable enough in volume to run systematically.
+- Large write-offs above **$1,000** are rare **(838 transactions)** but individually costly, averaging $1,801 each and totaling **$1.51M**. These warrant dedicated case-by-case account management. The strategic prescription is three-tiered: automate small, systemize medium, escalate large.
 
 ---
 
